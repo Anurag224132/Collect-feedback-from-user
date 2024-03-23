@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Survey Tool</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div class="container">
+<h1>Create a Survey</h1>
+<form method="POST" id="surveyForm" action="/saveSurvey">
+<label for="surveyTitle">Survey Title:</label>
+<input type="text" id="surveyTitle" name="surveyTitle" required><br><br>
+<label for="question1">Question 1:</label>
+<input type="text" id="question1" name="question1" required><br>
+<label for="answer1">Answer Choices:</label>
+<input type="text" id="answer1" name="answer1" placeholder="Enter comma-separated choices" required><br><br>
+<button type="button" id="btn-next">Add Another Question</button><br><br>
+<button type="submit" id="btn-sub">Save Survey</button>
+</form>
+</div>
+<script src="/js/script.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
